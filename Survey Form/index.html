@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Friendship Survey Form</h1>
+    <p id="description">Thank you for taking the time to answering my survey form!</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" required placeholder="Enter your Name"></input>
+
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" required placeholder="Enter your email"></input></lable>
+
+        <label for="number" id="number-label">Age</label>
+        <input id="number" type="number" min="13" max="120" required placeholder="Enter your age"></input>
+        
+        <label for="dropdown">What would best describe you as?</label>
+        <select id="dropdown">
+          <option>Close Friend</option>
+          <option>Friend</option>
+          <option>Acquiantance</option>
+        </select>
+        
+        <label for="irl">Have we met IRL (In Real Life)?</label>
+        <input type="radio" id="irl" name="irl" value="yes">Yes</input>
+        <input type="radio" id="irl" name="irl" value="no">No</input>
+
+        <label for="qualities">What would best describe me? (Select as much as you want)</label>
+        <input id="qualities" type="checkbox" value="handsome"></input>
+        <input id="qualities" type="checkbox" value="friendly"></input>
+        <input id="qualities" type="checkbox" value="smart"></input>
+        <input id="qualities" type="checkbox" value="lazy"></input>
+        <input id="qualities" type="checkbox" value="noisy"></input>
+
+        <label for="message">Drop a message!</label>
+        <textarea id="message"></textarea>
+
+        <button id="submit">Submit</submit>
+    </form>
+
+</body>
+</html>
